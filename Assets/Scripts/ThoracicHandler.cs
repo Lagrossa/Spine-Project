@@ -62,8 +62,9 @@ public class ThoracicHandler : MonoBehaviour
         //transform.parent.rotation = v3;
         //Reverts to base rotation.
         if (!returnToNormal) { return; }
-        if (!touching){ currOffsetDeg += 5 * (-currOffsetDeg / 2) * Time.deltaTime; }
+        if (!touching) { currOffsetDeg += 5 * (-currOffsetDeg / 2) * Time.deltaTime; }
         else { currOffsetDeg += 5 * (-currOffsetDeg / 2) * Time.deltaTime * weaknessPolicy; }
+
     }
 
     private void OnDrawGizmos() 
